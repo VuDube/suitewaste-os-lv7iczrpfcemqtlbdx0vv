@@ -1,0 +1,21 @@
+{
+  "short_name": "SuiteWaste",
+  "name": "SuiteWaste OS 2.1",
+  "description": "Operational Intelligence Suite for Waste Buyback Centers.",
+  "icons": [
+    {
+      "src": "https://placehold.co/192x192/050505/00FF41/png?text=SW",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://placehold.co/512x512/050505/00FF41/png?text=SW",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#050505",
+  "background_color": "#050505"
+}

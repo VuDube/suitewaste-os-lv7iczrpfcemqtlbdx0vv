@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 240 10% 3.9%; /* #050505 */
+    --foreground: 0 0% 90%; /* #E5E5E5 */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 90%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 136 100% 50%; /* #00FF41 */
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 136 100% 50%;
+    --accent-foreground: 240 10% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%; /* Brighter border for contrast */
+    --input: 0 0% 20%;
+    --ring: 136 100% 50%;
+    --radius: 0rem; /* Sharp corners */
+  }
+  .dark {
+    /* Same as root for a forced dark theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 90%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 90%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 136 100% 50%;
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 136 100% 50%;
+    --accent-foreground: 240 10% 3.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 136 100% 50%;
+    --radius: 0rem;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-industrial-black text-off-white font-sans;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    touch-action: manipulation;
+  }
+  /* Custom scrollbar for the industrial theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #00FF41;
+    border: 2px solid #1a1a1a;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #33ff66;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
